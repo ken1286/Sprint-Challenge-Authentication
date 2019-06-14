@@ -16,7 +16,7 @@ export default class Register extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const endpoint = 'http://localhost:3300/api/register';
+    const endpoint = 'https://dadjokes-app.herokuapp.com/api/register';
     axios
       .post(endpoint, this.state)
       .then(res => {
