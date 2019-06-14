@@ -6,7 +6,7 @@ class JokeList extends React.Component {
   };
 
   componentDidMount() {
-    const endpoint = 'http://localhost:3300/api/jokes';
+    const endpoint = 'https://dadjokes-app.herokuapp.com/api/jokes';
 
     axiosAuth()
       .get(endpoint )
