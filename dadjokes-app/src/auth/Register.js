@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Button } from 'reactstrap';
 
 export default class Register extends React.Component {
   state = {
@@ -51,7 +52,7 @@ export default class Register extends React.Component {
             />
           </div>
           <div>
-            <button type="submit">Register</button>
+            <Button size="lg" color="success" type="submit">Register</Button>
           </div>
         </form>
       </>

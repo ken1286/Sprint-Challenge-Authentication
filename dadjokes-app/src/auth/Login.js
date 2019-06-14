@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Button, Form } from 'reactstrap';
 
 export default class Login extends React.Component {
   state = {
@@ -32,7 +33,7 @@ export default class Login extends React.Component {
     return (
       <>
         <h1>Login</h1>
-        <form onSubmit={this.handleSubmit}>
+        <Form onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="username">Username</label>
             <input
@@ -51,10 +52,8 @@ export default class Login extends React.Component {
               type="password"
             />
           </div>
-          <div>
-            <button type="submit">Login</button>
-          </div>
-        </form>
+          <Button size="lg" color="primary" type="submit">Login</Button>
+        </Form>
       </>
     );
   }
